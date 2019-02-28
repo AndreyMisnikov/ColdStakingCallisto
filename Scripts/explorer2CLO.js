@@ -66,7 +66,8 @@ window.Explorer2 = new function () {
 
 		var round = {};
 		round.StartDate = txDateTime;
-		round.EndDate = new Date(round.StartDate.setDate(round.StartDate.getDate() + 27));
+		round.EndDate = new Date(txDateTime);
+		round.EndDate.setDate(round.EndDate.getDate() + 27);
 
 		this.rounds.push(round);
 	};
